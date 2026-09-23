@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Personal biometric data and downloaded model weights stay local.
+data/db/*
+!data/db/.gitkeep
+data/enroll/*
+!data/enroll/.gitkeep
+models/*.onnx
