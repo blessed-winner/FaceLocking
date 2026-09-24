@@ -19,7 +19,7 @@ META_PATH = Path("data/db/face_db.json")
 def main() -> None:
     parser = argparse.ArgumentParser(description="Enroll an identity for FaceLocking.")
     parser.add_argument("--name", required=True)
-    parser.add_argument("--camera", type=int, default=0)
+    parser.add_argument("--camera", type=int, default=1)
     parser.add_argument("--samples", type=int, default=15)
     args = parser.parse_args()
     name = args.name.strip()

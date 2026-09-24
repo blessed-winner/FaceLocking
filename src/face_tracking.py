@@ -28,7 +28,7 @@ def _label(frame, text: str, xy: tuple[int, int], color: tuple[int, int, int]) -
 def main() -> None:
     parser = argparse.ArgumentParser(description="Display facial signals for one enrolled person only.")
     parser.add_argument("--name", required=True, help="Exact name enrolled in data/db/face_db.npz.")
-    parser.add_argument("--camera", type=int, default=0)
+    parser.add_argument("--camera", type=int, default=1)
     parser.add_argument("--threshold", type=float, default=.34, help="ArcFace distance cutoff; higher is more forgiving.")
     parser.add_argument("--stable-frames", type=int, default=3)
     args = parser.parse_args()
