@@ -26,7 +26,7 @@ Model weights and face databases are deliberately ignored by Git.
 ## Enroll identities
 
 ```powershell
-python -m src.enroll --name="Winner"
+python -m src.enroll --name="Enrolled_name"
 ```
 
 Press `SPACE` to take samples, `a` for automatic capture, `s` to save after
@@ -44,7 +44,7 @@ old-project/data/db/face_db.json -> FaceLocking/data/db/face_db.json
 ## Track one person
 
 ```powershell
-python -m src.face_tracking --name="Winner"
+python -m src.face_tracking --name="Enrolled_name"
 ```
 
 `--name` must be an exact enrolled name. The tracker shows `NOT_DETECTED`
